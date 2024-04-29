@@ -1,0 +1,94 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Container Styles */
+  .container {
+    width: 600px;
+    background: #fff; /* Shorthand for white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    border: 1px solid #ddd; /* Subtle border */
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    transform: translateY(-3px); /* Slight bounce effect on hover */
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Emphasize labels */
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out; /* Smooth input interaction */
+  }
+  
+  .form-group input[type="text"]:focus {
+    border-color: #4caf50; /* Green border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button Styles */
+  .button {
+    background: linear-gradient(to right, #4CAF50, #3e8e41); /* Green to darker green gradient */
+    border: 1px solid #ddd; /* Light gray border */
+    color: #f0f0f0; /* Light gray text */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* Smooth button interaction */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .button:hover {
+    background: linear-gradient(to right, #3e8e41, #2d6f33); /* Darken gradient on hover */
+    border-color: #3e8e41; /* Match the darker green from the gradient */
+    transform: scale(1.02); /* Slight zoom on hover (optional) */
+  }
+  
+  /* Result Styles */
+  .result {
+    padding: 20px;
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded corners */
+    animation: grow 0.5s ease-in-out forwards; /* Animate result appearance */
+  }
+  
+  /* Keyframes for Result Animation */
+  @keyframes grow {
+    from {
+      opacity: 0;
+      transform: scale(0.95); /* Start slightly shrunk */
+    }
+    to {
+      opacity: 1;
+      transform: scale(1); /* Grow to full size */
+    }
+  }
+  
